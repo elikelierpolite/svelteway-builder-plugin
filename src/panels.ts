@@ -38,24 +38,31 @@ export default (editor: grapesjs.Editor, opts: RequiredPluginOptions) => {
           id: cmdDeviceDesktop,
           command: cmdDeviceDesktop,
           active: true,
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-      </svg>
-      `,
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="3" y="4" width="18" height="12" rx="1" />
+          <line x1="7" y1="20" x2="17" y2="20" />
+          <line x1="9" y1="16" x2="9" y2="20" />
+          <line x1="15" y1="16" x2="15" y2="20" />
+        </svg>`,
         },
         {
           id: cmdDeviceTablet,
           command: cmdDeviceTablet,
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 4.5v15a2.25 2.25 0 002.25 2.25z" />
-        </svg>
-        `,
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tablet" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="5" y="3" width="14" height="18" rx="1" />
+          <circle cx="12" cy="17" r="1" />
+        </svg>`,
         },
         {
           id: cmdDeviceMobile,
           command: cmdDeviceMobile,
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="7" y="4" width="10" height="16" rx="1" />
+          <line x1="11" y1="5" x2="13" y2="5" />
+          <line x1="12" y1="17" x2="12" y2="17.01" />
         </svg>`,
         },
       ],
@@ -67,7 +74,7 @@ export default (editor: grapesjs.Editor, opts: RequiredPluginOptions) => {
           id: swv,
           command: swv,
           context: swv,
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-border-none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <line x1="4" y1="4" x2="4" y2="4.01" />
           <line x1="8" y1="4" x2="8" y2="4.01" />
@@ -96,44 +103,46 @@ export default (editor: grapesjs.Editor, opts: RequiredPluginOptions) => {
           id: prv,
           context: prv,
           command: () => editor.runCommand(prv),
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-        `,
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="12" r="2" />
+          <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+        </svg>`,
         },
         {
           id: ful,
           command: ful,
           context: ful,
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <polyline points="16 4 20 4 20 8" />
-          <line x1="14" y1="10" x2="20" y2="4" />
-          <polyline points="8 20 4 20 4 16" />
-          <line x1="4" y1="20" x2="10" y2="14" />
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
         </svg>`,
         },
         {
           id: "undo",
           command: () => editor.runCommand("core:undo"),
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
-        </svg>
-        `,
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
+        </svg>`,
         },
         {
           id: "redo",
           command: () => editor.runCommand("core:redo"),
-          label: `<svg  ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3" />
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-forward-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M15 13l4 -4l-4 -4m4 4h-11a4 4 0 0 0 0 8h1" />
         </svg>`,
         },
         {
           id: cmdClear,
           command: () => editor.runCommand(cmdClear),
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="7" x2="20" y2="7" />
+          <line x1="10" y1="11" x2="10" y2="17" />
+          <line x1="14" y1="11" x2="14" y2="17" />
+          <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+          <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
         </svg>`,
         },
       ],
@@ -145,7 +154,7 @@ export default (editor: grapesjs.Editor, opts: RequiredPluginOptions) => {
           id: osm,
           command: osm,
           active: true,
-          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"  stroke="none" class="w-6 h-6">
+          label: `<svg ${iconStyle} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
         </svg>`,
         },
