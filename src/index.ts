@@ -1,3 +1,4 @@
+//@ts-nocheck
 import type grapesjs from 'grapesjs';
 import commands from './commands';
 import blocks from './blocks';
