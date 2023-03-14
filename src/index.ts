@@ -86,10 +86,10 @@ const plugin: grapesjs.Plugin<PluginOptions> = (editor, opts: Partial<PluginOpti
   };
 
   if (config.useCustomTheme && typeof window !== 'undefined') {
-    const primaryColor = '#463a3c';
-    const secondaryColor = '#b9a5a6';
-    const tertiaryColor = '#804f7b';
-    const quaternaryColor = '#d97aa6';
+    const primaryColor = '#2E2E2E';
+    const secondaryColor = '#CCCCCC';
+    const tertiaryColor = '#FF531A';
+    const quaternaryColor = '#FF3E00';
     const prefix = 'gjs-';
     let cssString = '';
 

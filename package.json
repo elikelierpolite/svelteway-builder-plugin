@@ -1,7 +1,7 @@
 {
-  "name": "grapesjs-preset-webpage",
-  "version": "1.0.2",
-  "description": "GrapesJS Plugin Webpage Preset",
+  "name": "svelteway-builder-plugin",
+  "version": "1.0.0",
+  "description": "Svelteway Builder Plugin Advanced from - GrapesJS Plugin Webpage Preset",
   "main": "dist/index.js",
   "files": [
     "dist/"
@@ -12,16 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artf/grapesjs-preset-webpage.git"
+    "url": "https://github.com/elikelierpolite/svelteway-builder-plugin.git"
   },
   "keywords": [
+    "svelteway",
     "grapesjs",
     "plugin",
     "webpage",
     "preset",
     "wysiwyg"
   ],
-  "author": "Artur Arseniev",
+  "author": "Elikelier Polite",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "grapesjs": "^0.19.5",
