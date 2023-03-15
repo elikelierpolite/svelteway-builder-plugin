@@ -1,6 +1,6 @@
 {
   "name": "svelteway-builder-plugin",
-  "version": "1.0.13",
+  "version": "1.0.34",
   "description": "Svelteway Builder Plugin Advanced from - GrapesJS Plugin Webpage Preset",
   "main": "dist/index.js",
   "files": [
